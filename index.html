@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Test</title>
+    <title>Stolen Bike</title>
 
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
@@ -15,8 +15,34 @@
   <body>
     <div class="container">
       <header>
-        <h1>Test</h1>
+        <h1>Stolen Bike</h1>
       </header>
+      <div class="input">
+        <form id="bike-search" action="#" method="post">
+          <label for="start_date">start date</label>
+          <input id="start_date" type="date">
+          <label for="end_date">end date</label>
+          <input id="end_date" type="date">
+          <label for="color">Select color:</label>
+          <select id="color">
+            <option>unkown</option>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Brown</option>
+            <option>Green</option>
+            <option>Orange</option>
+            <option>Pink</option>
+            <option>Purple</option>
+            <option>Red</option>
+            <option>Silver or Grey</option>
+            <option>Stickers tape or other cover-up</option>
+            <option>Teal</option>
+            <option>White</option>
+            <option>Yellow or Gold</option>
+          </select>
+          <button type="submit" class="btn btn-success">Search</button>
+        </form>
+      </div>
       <div class="output">
       </div>
     </div>
