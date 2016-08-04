@@ -2,7 +2,7 @@
 
 #### This is a starter template for Epicodus JS classes. Current as of August 1, 2016
 
-#### By Kevin VanEvery and Matthew Giem
+#### By Cory Olson and Matthew Giem
 
 ## Description
 
