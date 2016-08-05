@@ -51,7 +51,7 @@ Bike.prototype.renderBike = function (bikes) {
                         bike.manufacturer_name + "</p><p><img src='" +
                         bike.thumb + "' alt='bicycle image'></p><hr>");
     });
-}
+};
 
 
 exports.bikeModule = Bike;

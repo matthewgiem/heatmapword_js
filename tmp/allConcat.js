@@ -38,3 +38,27 @@ $(document).ready(function() {
   });
 
 });
+
+var Database = require('../js/database.js').databaseModule;
+
+$(document).ready(function() {
+  var db = new Database();
+  var stateList = "";
+
+  for (var key in db.states) {
+    stateList += '<option value="' + key + '">' + key+ "</option>";
+  }
+  $('#state-list').html(stateList);
+
+
+  $('#state-select').submit(function(event){
+    event.preventDefault();
+    var stateInfo = db.findByState($('#state-list').val());
+    stateInfo.forEach(function(zipCode){
+      for(var key in zipCode) {
+        $('#results').append('<p>' + key + ': ' + zipCode[key] + '</p>')
+      }
+    });
+  });
+
+});
